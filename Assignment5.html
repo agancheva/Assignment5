@@ -9,8 +9,12 @@
 	window.alert("I have been clicked!");
 }
 */
-
+		
 //Step 2
+/* See below */
+
+
+//Step 3
 /*	document.addEventListener("DOMContentLoaded", init, false);
 	function init() {
 		clickMe.addEventListener("click", writeMessage, false);
@@ -18,8 +22,7 @@
 		function writeMessage() {
 			alert("I have been clicked!");
 		}*/
-		
-//Step 3
+
 </script>
 </head>
 
@@ -33,11 +36,19 @@
 
 <!-- Step 2. Add a button to a web page and uniquely ID the button. Write a script that finds the button by its ID. Then use the DOM Element method to associate a function with the onclick event of the button. Again, display the message “I have been clicked” out into an alert box.
 
-<button id="clickMe">Click Me</button> -->
+<button id="clickMe">Click Me</button>
 
+<script>
+var myElement = document.getElementById("clickMe");
+myElement.onclick = function() {
+	alert("Hello World");
+	}
+</script>
 
+-->
 <!-- Step 3. Add a button to a web page and uniquely ID the button. Write a script that attaches an event listener to the button and listens for the click event. When it’s heard, a user-defined function should be called and the message “I have been clicked” should be displayed out into an alert box.
 
+<button id="clickMe">Click Me</button>  -->
 
 </body>
 </html>
